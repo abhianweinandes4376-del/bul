@@ -1,0 +1,163 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%   ;
+}
+
+.logo img {
+    max-width: 120px; 
+    height: auto;
+}
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.navmenu a:hover {
+    color: #ff3d00;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+.icon i{
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.icon i:hover {
+    transform: scale(1.1);
+    color: #ff3d00;
+}
+#menu-icon {
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
+section {
+    padding: 5% 10%;
+}
+.main-home {
+   width: 100%;
+    height: 100vh;
+    background-image: url(bckg.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+.main-text h5 {
+    color: #b0e1af;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.main-text h1 {
+    font-size: 65px;
+    color: #000;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.main-text p {
+    font-size: 20px;
+    color: #333c56;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.main-btn   {
+    display: inline-block;
+    color: #111;
+    padding: 12px 25px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all .42s ease;
+    border: 2px solid #111;
+}
+.main-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+.main-btn i {
+    vertical-align: middle;
+}
+.down-arrow {
+    position: absolute;
+    top: 85%;
+    right: 11%;
+    transform: translateX(-50%);
+}
+.down i {
+    font-size: 30px;
+    color: #2c2c2c;
+    animation: down 1.5s linear infinite;
+    border : 2px solid #2c2c2c;
+    border-radius: 50px;
+    padding : 12px 12px;
+}
+.down:hover i {
+    background-color: #2c2c2c;
+    color: #fff;
+    transition: all .42s ease;
+}
+header.sticky {
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0 0 0 / 10%);
+    padding: 20px 10%;
+}
+.center-text h2{
+    text-align: center;
+    color: #111;
+    font-size: 36px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.center-text span {
+    color: #ff3d00;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+.row {
+    position: relative;
+    transition: all .40s;
+}
+.row img {
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+.row img:hover {
+    transform: scale(0.9);
+}
